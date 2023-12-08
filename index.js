@@ -34,6 +34,7 @@ window.addEventListener('DOMContentLoaded', () => {
 
         document.querySelector('.sliderBtn-next').addEventListener('click', () => {
             offset = offset - width;
+            console.log('as')
 
             if (offset <= -maxWidth) {
                 offset = 0;
@@ -44,7 +45,7 @@ window.addEventListener('DOMContentLoaded', () => {
     }
    
     if (sliderBtn) {
-        slider(375, 1165);
+        slider(375, 1000);
     }
 
     //form
