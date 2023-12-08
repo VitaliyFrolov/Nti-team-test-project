@@ -866,6 +866,22 @@ body {
     }
 }
 
+@media screen and (max-width: 1000px) {
+    .product-card_mobile-hidden {
+        display: none !important;
+    }
+
+    .discounts-slider {
+        min-width: 355px;
+        display: flex;
+    }
+
+    .discounts-slider__main-block {
+        flex-direction: column;
+        margin: 0 auto;
+    }
+}
+
 .product-card {
     filter: drop-shadow(5px 15px 70px rgba(173, 178, 201, 0.35));
 }
@@ -1077,6 +1093,7 @@ body {
     background: var(--color-purple-light);
     border-radius: 20px;
     overflow: hidden;
+    z-index: 3;
 }
 
 @media screen and (min-width: 1000px) {
@@ -1168,6 +1185,10 @@ body {
     width: 140px;
     height: 165px;
     margin-left: 13px;
+    border-radius: 50px;
+    box-shadow: 50px 20px 0px #F99CDA;
+    background-color: rgba(249, 156, 218, 0.5);
+    box-shadow: 0 0 50px 50px rgba(249, 156, 218, 0.5);
 }
 
 @media screen and (min-width: 1000px) {
@@ -1175,6 +1196,12 @@ body {
         width: 233px;
         height: 272px;
         margin-left: 58px;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    .discounts-slider__main-block_mobile {
+        display: none;
     }
 }
 
@@ -1720,7 +1747,7 @@ body {
     align-items: center;
 }
 
-@media screen and (hover: hover) {
+@media screen and (max-width: 1000px) {
     .popup-form {
         top: 3700px;
         margin: 10px;
