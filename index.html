@@ -1,0 +1,1446 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.cdnfonts.com/css/euclid-circular-a" rel="stylesheet">
+    <link href="/index.css" rel="stylesheet">
+    <title>Rewire</title>
+</head>
+<body>
+    <header class="header main-page__header">
+        <div class="header__top-line">
+            <div class="container header__top-line-container">
+
+                <div class="header__info">
+                    <div class="header__info-item">
+                        <svg class="header__info-item-icon" width="24" height="24">
+                            <use href="/static/icons.svg#map-pin" />
+                        </svg>
+                        <span>Магазины</span>
+                    </div>
+                    <a class="header__info-item" href="email:info@email.com">
+                        <svg class="header__info-item-icon" width="24" height="24">
+                            <use href="/static/icons.svg#email" />
+                        </svg>
+                        <span>info@email.com</span>
+                    </a>
+                </div>
+
+                <nav class="header__navigation">
+                    <ul class="header__navigation-list">
+                        <li class="header__navigation-list-item">
+                            <a class="show-modal" href="/delivery">Доставка</a>
+                        </li>
+                        <li class="header__navigation-list-item">
+                            <a  href="/paiment">Оплата</a>
+                        </li>
+                        <li class="header__navigation-list-item">
+                            <a href="/refund">Возврат</a>
+                        </li>
+                        <li class="header__navigation-list-item">
+                            <a  href="/help">Помощь</a>
+                        </li>
+                        <li class="header__navigation-list-item">
+                            <a href="/about">О нас</a>
+                        </li>
+                        <li class="header__navigation-list-item">
+                            <a href="/for-business">Для бизнеса</a>
+                        </li>
+                    </ul>
+                </nav>
+
+            </div>
+        </div>
+
+        <div class="header__mobile-top-line">
+            <div class="container header__mobile-top-line-content">
+                <a href="">
+                    <svg width="24" height="24" viewBox="0 0 24 24">
+                        <use href="/static/icons.svg#map-pin"/>
+                    </svg>
+                </a>
+                <a class="header__mobile-logo" href="/">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="41" height="41" viewBox="0 0 41 41">
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M5.13508 7.09265L5.5904 6.30468L6.32231 5.77905L6.97095 5.4834L35.0201 5.55771L35.7847 5.98052L36.5979 6.67977L36.7185 34.7705L36.2092 35.3235L35.1911 35.7952L6.7408 35.9144L5.75536 35.4381L5.04907 34.5841L5.13508 7.09265ZM6.64855 29.9732L35.1633 29.954L35.2441 7.15046L6.75073 7.06334L6.64855 29.9732ZM12.6237 34.0527L16.4115 34.0863L16.4291 33.5469L13.2726 33.5181L13.304 32.9307L16.4037 32.9435L16.4288 32.5368L13.3255 32.5112C13.3255 32.5112 13.3179 31.8635 13.3261 31.7857C13.3343 31.7079 16.4322 31.8635 16.4322 31.8635L16.4242 31.4567L12.6554 31.4718L12.6237 34.0527ZM30.401 33.8926L34.1889 33.9262L34.2065 33.3868L31.05 33.3579L31.0814 32.7705L34.181 32.7833L34.2062 32.3767L31.1028 32.351C31.1028 32.351 31.0953 31.7034 31.1035 31.6255C31.1116 31.5477 34.2095 31.7034 34.2095 31.7034L34.2015 31.2966L30.4327 31.3116L30.401 33.8926ZM17.6401 31.4849L17.6204 33.9939L22.6022 34.0172L22.6057 31.4953L21.6682 31.4825L21.6952 33.3801L20.4459 33.4033L20.4205 31.5006L19.5717 31.4716L19.5903 33.4271L18.3726 33.3895L18.3385 31.4772L17.6401 31.4849ZM23.8258 31.4705L23.7662 34.0626L24.4639 34.0516C24.4639 34.0516 24.4398 31.5147 24.4195 31.4742C24.3992 31.4335 23.8258 31.4707 23.8258 31.4707V31.4705ZM7.70975 31.4939L7.68781 34.0649L8.40755 34.0482L8.40611 33.0384L9.98172 33.0588L10.5977 33.9225L11.5987 33.9302L10.7993 33.0716L11.48 32.6017L11.4481 31.3959L7.70975 31.4939ZM25.6472 31.4939L25.6253 34.0649L26.345 34.0482L26.3436 33.0384L27.9192 33.0588L28.5352 33.9225L29.5362 33.9302L28.7368 33.0716L29.4175 32.6017L29.3856 31.3959L25.6472 31.4939Z" fill="#E50E78"/>
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M8.44597 23.5371L11.992 23.4867L14.3668 23.0265L16.6115 22.1233L17.5379 21.5814L18.6342 22.3089L19.9679 22.9594L18.1423 24.0656L16.3691 24.9603L14.8091 25.5133L12.9672 25.7883L8.44966 25.8716L8.44597 23.5371ZM8.38496 19.6757L10.3829 19.691L11.5541 19.412L12.7252 18.9028L14.197 19.6312L15.7099 20.3631L13.8847 21.3877L11.9798 21.8268L10.3869 22.0544L8.30151 22.0864L8.38496 19.6757Z" fill="#E50E78"/>
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M8.42261 17.1512L10.7487 17.2806L12.9284 18.0288L15.108 19.0212L17.0107 19.9296L18.9625 21.2635L20.8331 22.4996L22.557 23.6367L24.8413 24.6484L27.1511 25.6082L28.371 25.8196L33.4959 25.8185L33.5023 23.3882L29.3867 23.5179L26.8752 22.7791L24.1996 21.6135L22.0988 20.1365L19.8525 18.6429L17.5499 17.3873L15.3516 16.1723L12.9917 15.1054L11.1329 14.6777L8.45752 14.7077L8.42261 17.1512Z" fill="#E50E78"/>
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M8.46045 13.364L11.9052 13.3721L13.7921 13.7463L15.7927 14.5759L17.6308 15.5192L19.9731 16.9182L21.8599 18.2519L24.3161 19.7646L26.4795 20.8545L28.7079 21.7328L30.3671 22.0417L33.6919 22.0571L33.6905 19.644L30.8508 19.7579L28.208 18.8549L25.68 17.4098L22.8244 15.7678L20.1989 14.0437L17.7369 12.6149L15.4117 11.5398L13.8536 11.1128L13.1228 10.9644L8.47582 11.0667L8.46045 13.364Z" fill="#E50E78"/>
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M33.6987 17.0265L33.7361 14.4403L30.8143 14.4711L29.4517 14.7313L27.6618 15.2682L26.266 15.9514L25.7406 16.2442L27.2025 16.9732L28.6663 17.7703L30.2765 17.3103L31.5128 17.0805L33.6987 17.0265ZM33.5131 13.2785L33.5903 10.7397L30.4051 10.7553L28.1235 10.7705L26.0217 11.3399L23.8056 12.3645L22.0983 13.616L22.1108 13.9376L23.1843 14.572L24.3554 15.3852L25.9169 14.4986L27.6898 13.891L29.9346 13.3971L33.5131 13.2785ZM8.54588 32.0317L8.52954 32.6011L10.4423 32.6158L10.5236 32.0247L8.54588 32.0317ZM26.4834 32.0317L26.467 32.6011L28.3798 32.6158L28.4611 32.0247L26.4834 32.0317Z" fill="#E50E78"/>
+                      </svg>
+                </a>
+                <a href="tel:8 (495) 120-81-55">
+                    <svg  width="24" height="24" viewBox="0 0 24 24">
+                        <use href="/static/icons.svg#phone"/>
+                    </svg>
+                </a>
+            </div>
+        </div>
+
+        <div class="header__content">
+            <div class="container header__content-container">
+
+                <a class="header__logo" href="/">
+                    <svg width="80" height="80" viewBox="0 0 80 80">
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M10.0199 13.8392L10.9083 12.3017L12.3364 11.2761L13.6021 10.6992L68.3321 10.8442L69.8239 11.6692L71.4108 13.0336L71.6461 67.8448L70.6524 68.9239L68.6658 69.8442L13.153 70.0767L11.2302 69.1473L9.85205 67.4811L10.0199 13.8392ZM12.973 58.4842L68.6114 58.4467L68.7692 13.952L13.1724 13.782L12.973 58.4842ZM24.6317 66.4442L32.0227 66.5098L32.0571 65.4573L25.898 65.4011L25.9592 64.2548L32.0074 64.2798L32.0564 63.4864L26.0011 63.4364C26.0011 63.4364 25.9864 62.1727 26.0024 62.0208C26.0183 61.8689 32.063 62.1726 32.063 62.1726L32.0474 61.3789L24.6936 61.4083L24.6317 66.4442ZM59.3192 66.1317L66.7102 66.1973L66.7446 65.1448L60.5855 65.0886L60.6467 63.9423L66.6949 63.9673L66.7439 63.1739L60.6886 63.1239C60.6886 63.1239 60.6739 61.8602 60.6899 61.7083C60.7058 61.5564 66.7505 61.8601 66.7505 61.8601L66.7349 61.0664L59.3811 61.0958L59.3192 66.1317ZM34.4199 61.4339L34.3814 66.3295L44.1021 66.3748L44.1089 61.4542L42.2796 61.4292L42.3324 65.1317L39.8946 65.177L39.8452 61.4645L38.1889 61.408L38.2252 65.2236L35.8492 65.1502L35.7827 61.4189L34.4199 61.4339ZM46.4896 61.4058L46.3733 66.4636L47.7346 66.442C47.7346 66.442 47.6877 61.492 47.648 61.413C47.6083 61.3336 46.4896 61.4061 46.4896 61.4061V61.4058ZM15.0436 61.4514L15.0008 66.468L16.4052 66.4355L16.4024 64.4651L19.4767 64.5048L20.6786 66.1902L22.6317 66.2051L21.0721 64.5298L22.4002 63.613L22.338 61.2602L15.0436 61.4514ZM50.0436 61.4514L50.0008 66.468L51.4052 66.4355L51.4024 64.4651L54.4767 64.5048L55.6786 66.1902L57.6317 66.2051L56.072 64.5298L57.4002 63.613L57.338 61.2602L50.0436 61.4514Z"/>
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M16.4801 45.9263L23.3992 45.8279L28.0329 44.93L32.4129 43.1675L34.2204 42.1104L36.3595 43.5297L38.962 44.7991L35.3998 46.9575L31.9398 48.7032L28.8961 49.7822L25.302 50.3188L16.4873 50.4813L16.4801 45.9263ZM16.3611 38.3919L20.2595 38.4216L22.5448 37.8772L24.8298 36.8838L27.7017 38.305L30.6536 39.7332L27.0923 41.7322L23.3754 42.5891L20.2673 43.0332L16.1982 43.0957L16.3611 38.3919Z" />
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M16.4346 33.4654L20.9733 33.7179L25.2264 35.1779L29.4793 37.1142L33.1918 38.8867L37.0002 41.4895L40.6502 43.9013L44.0139 46.1201L48.4711 48.0942L52.978 49.967L55.3583 50.3795L65.358 50.3773L65.3705 45.6351L57.3402 45.8882L52.4396 44.4467L47.2189 42.1723L43.1199 39.2904L38.7368 36.376L34.2439 33.926L29.9546 31.5554L25.3499 29.4735L21.723 28.6392L16.5027 28.6976L16.4346 33.4654Z" />
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M16.5083 26.0757L23.2299 26.0917L26.9114 26.8217L30.8152 28.4404L34.4017 30.2811L38.9721 33.0107L42.6536 35.6132L47.4461 38.5648L51.6674 40.6914L56.0155 42.4051L59.253 43.0079L65.7405 43.0379L65.7377 38.3295L60.1967 38.5517L55.0402 36.7898L50.1074 33.9701L44.5355 30.7661L39.4127 27.402L34.6086 24.6142L30.0717 22.5164L27.0314 21.6832L25.6055 21.3936L16.5383 21.5932L16.5083 26.0757Z" />
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M65.7537 33.2224L65.8265 28.1762L60.1256 28.2362L57.4668 28.744L53.9743 29.7915L51.2509 31.1246L50.2256 31.6959L53.0781 33.1184L55.9343 34.6737L59.0762 33.7762L61.4884 33.3278L65.7537 33.2224ZM65.3915 25.9093L65.5421 20.9556L59.3271 20.9859L54.8753 21.0156L50.774 22.1265L46.4499 24.1259L43.1187 26.5678L43.1431 27.1953L45.2378 28.4331L47.5228 30.0199L50.5696 28.2899L54.029 27.1043L58.409 26.1406L65.3915 25.9093ZM16.6749 62.5009L16.6431 63.6118L20.3753 63.6406L20.534 62.4871L16.6749 62.5009ZM51.6749 62.5009L51.6431 63.6118L55.3753 63.6406L55.534 62.4871L51.6749 62.5009Z" />
+                    </svg>
+                </a>
+
+                <div class="header__catalog-btn-wrapper">
+                    <button class="button button_contrast header__catalog-btn">
+                        <span class="button__caption">
+                            Каталог
+                        </span>
+                        <span class="button button_icon button__inserted-button">
+                            <svg width="21" height="21" viewBox="0 0 21 21">
+                                <use href="/static/icons.svg#multilayers"/>
+                            </svg>
+                        </span>
+                    </button>
+                </div>
+
+                <div class="header__burger-btn-wrapper">
+                    <button class="button button_icon header__burger-btn" data-burger-menu-opener>
+                        <svg width="21" height="21" viewBox="0 0 20 16">
+                            <use href="/static/icons.svg#burger" />
+                        </svg>
+                    </button>
+                </div>
+
+                <div class="input header__input">
+                    <input
+                        class="input__native-input"
+                        placeholder="Искать товары"
+                        type="text"
+                    />
+                    <button class="button button_icon input__button">
+                        <svg width="21" height="21" viewBox="0 0 21 21">
+                            <use href="/static/icons.svg#magnifier"/>
+                        </svg>
+                    </button>
+                </div>
+
+                <ul class="header__actions">
+                    <li class="header__actions-item">
+                        <svg width="24" height="24" viewBox="0 0 24 24">
+                            <use href="/static/icons.svg#person"/>
+                        </svg>
+                        <span class="header__action-caption">Войти</span>
+                    </li>
+                    <li class="header__actions-item">
+                        <svg width="24" height="24" viewBox="0 0 24 24">
+                            <use href="/static/icons.svg#heart"/>
+                        </svg>
+                        <span class="header__action-caption">Избранное</span>
+                    </li>
+                    <li class="header__actions-item" data-cart-button>
+                        <svg width="24" height="24" viewBox="0 0 24 24">
+                            <use href="/static/icons.svg#cart"/>
+                        </svg>
+                        <span class="header__action-caption">Корзина</span>
+                    </li>
+                </ul>
+
+            </div>
+        </div>
+
+        <div class="container header__bottom">
+            <ul class="collection header__redirect-collection">
+                <li class="collection__item">
+                    <svg class="collection__item-icon" height="24" width="24" viewBox="0 0 24 24">
+                        <use href="/static/icons.svg#flame"/>
+                    </svg>
+                    <span>Акции</span>
+                </li>
+                <li class="collection__item">
+                    <svg class="collection__item-icon" height="24" width="24" viewBox="0 0 24 24">
+                        <use href="/static/icons.svg#shop-mark"/>
+                    </svg>
+                    <span>Бренды</span>
+                </li>
+                <li class="collection__item">
+                    <svg class="collection__item-icon" height="24" width="24" viewBox="0 0 24 24">
+                        <use href="/static/icons.svg#diamond"/>
+                    </svg>
+                    <span>Premium бренды</span>
+                </li>
+                <li class="collection__item">
+                    <svg class="collection__item-icon" height="24" width="24" viewBox="0 0 24 24">
+                        <use href="/static/icons.svg#colors-group"/>
+                    </svg>
+                    <span>Подбор по параметрам</span>
+                </li>
+                <li class="collection__item">
+                    <svg class="collection__item-icon" height="24" width="24" viewBox="-4 -2 24 24">
+                        <use href="/static/icons.svg#colors-circle"/>
+                    </svg>
+                    <span>Онлайн-колеровка</span>
+                </li>
+                <li class="collection__item">
+                    <svg class="collection__item-icon" height="24" width="24" viewBox="0 0 24 24">
+                        <use href="/static/icons.svg#megafon"/>
+                    </svg>
+                    <span>Новости</span>
+                </li>
+            </ul>
+
+            <div class="header__tel-button-wrapper">
+                <a class="button header__tel-button" href="tel:8 (495) 120-81-55">
+                    <svg class="button__icon" width="24" height="24" viewBox="0 0 24 24">
+                        <use href="/static/icons.svg#phone"/>
+                    </svg>
+                    <span>8 (495) 120-81-55</span>
+                </a>
+            </div>
+            
+        </div>
+
+        <div class="burger-menu hidden">
+            <div class="burger-menu__overlay"></div>
+            <button class="burger-menu__close-btn">
+                <svg width="24" height="24" viewBox="0 0 24 24">
+                    <use href="/static/icons.svg#cross"/>
+                </svg>
+            </button>
+            <div class="burger-menu__sidebar">
+                <nav class="burger-menu__navigation">
+                    <div class="burger-menu__navigation-section">
+                        <ul>
+                            <li>
+                                <a class="burger-menu__navigation-link" href="">
+                                    <svg class="burger-menu__navigation-link-icon" width="24" height="24" viewBox="-4 -4 24 24">
+                                        <use href="/static/icons.svg#multilayers"/>
+                                    </svg>
+                                    <span>
+                                        Каталог
+                                    </span>
+                                </a>
+                            </li>
+                            <li>
+                               <a class="burger-menu__navigation-link" href="">
+                                    <svg class="burger-menu__navigation-link-icon" width="24" height="24" viewBox="0 0 24 24">
+                                        <use href="/static/icons.svg#cart"/>
+                                    </svg>
+                                    <span>
+                                        Корзина
+                                    </span>
+                               </a>
+                            </li>
+                            <li>
+                                <a class="burger-menu__navigation-link" href="">
+                                    <svg class="burger-menu__navigation-link-icon" width="24" height="24" viewBox="0 0 24 24">
+                                        <use href="/static/icons.svg#heart"/>
+                                    </svg>
+                                    <span>
+                                        Избранное
+                                    </span>
+                                </a>
+                            </li>
+                            <li>
+                               <a class="burger-menu__navigation-link" href="">
+                                    <svg class="burger-menu__navigation-link-icon" width="24" height="24" viewBox="0 0 24 24">
+                                        <use href="/static/icons.svg#person"/>
+                                    </svg>
+                                    <span>
+                                        Профиль
+                                    </span>
+                               </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="burger-menu__navigation-section">
+                        <ul>
+                            <li>
+                                <a class="burger-menu__navigation-link" href="email:info@kraskizdes.ru">
+                                    <svg class="burger-menu__navigation-link-icon" width="24" height="24" viewBox="-4 -4 24 24">
+                                        <use href="/static/icons.svg#email"/>
+                                    </svg>
+                                    <span>
+                                        info@kraskizdes.ru
+                                    </span>
+                                </a>
+                            </li>
+                            <li>
+                                <a class="burger-menu__navigation-link" href="tel:8 (495) 120-81-55">
+                                    <svg class="burger-menu__navigation-link-icon" width="24" height="24" viewBox="0 0 24 24">
+                                        <use href="/static/icons.svg#phone"/>
+                                    </svg>
+                                    <span>
+                                        8 (495) 120-81-55
+                                    </span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="burger-menu__navigation-section">
+                        <ul>
+                            <li>
+                                <a class="burger-menu__navigation-link" href="">Доставка</a>
+                            </li>
+                            <li>
+                                <a class="burger-menu__navigation-link" href="">Оплата</a>
+                            </li>
+                            <li>
+                                <a class="burger-menu__navigation-link" href="">Возврат</a>
+                            </li>
+                            <li>
+                                <a class="burger-menu__navigation-link" href="">Помощь</a>
+                            </li>
+                            <li>
+                                <a class="burger-menu__navigation-link" href="">О нас</a>
+                            </li>
+                            <li>
+                                <a class="burger-menu__navigation-link" href="">Для бизнеса</a>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+            </div>
+        </div>
+
+    </header>
+
+    <main>
+
+        <section class="container main-page__discounts">
+            <span class="categories__next-card-btn_discounts sliderBtn-next">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <g id="vuesax/linear/arrow-right">
+                    <g id="arrow-right">
+                    <path id="Vector" d="M8.91016 4.07992L15.4302 10.5999C16.2002 11.3699 16.2002 12.6299 15.4302 13.3999L8.91016 19.9199" stroke="url(#paint0_linear_472_1150)" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                    </g>
+                    </g>
+                    <defs>
+                    <linearGradient id="paint0_linear_472_1150" x1="8.91016" y1="19.9199" x2="16.8308" y2="19.5547" gradientUnits="userSpaceOnUse">
+                    <stop stop-color="#DD3197"/>
+                    <stop offset="1" stop-color="#822FAF"/>
+                    </linearGradient>
+                    </defs>
+                </svg>
+            </span>
+           <div class="main-page__discounts-content">
+                <div class="main-page__discounts-slider">
+                    <div class="discounts-slider">
+                        <div class="discounts-slider__main-block">
+                            <div class="discounts-slider__main-block-content">
+                                <span class="discounts-slider__label-percent">
+                                    <span class="discounts-slider__to">До</span>
+                                    <span class="discounts-slider__label-percent">-25%</span>
+                                </span>
+                                <span class="discounts-slider__label-description">
+                                    Скидки на выделенные товары Benjamine Moore
+                                </span>
+                            </div>
+                            <img
+                                class="discounts-slider__main-block-img"
+                                src="/static/pictures/benjamine-moor-main.png"
+                                alt=""
+                            />
+                        </div>
+                        <div class="discounts-slider__products">
+
+                            <div class="sliderLine">
+                                <div class="product-card product-card_mobile">
+                                    <div class="product-card__picture-wrapper">
+                                        <img
+                                            class="product-card__picture"
+                                            src="/static/pictures/benjamine-moor-1.png"
+                                            width="75"
+                                            height="85"
+                                            alt=""
+                                        >
+                                    </div>
+                                    <span class="product-card__name">
+                                        Benjamin Moore Regal Select 549 Waterborne Interior Paint Eggshell
+                                    </span>
+                                    <div class="product-card__quantity">
+                                        <span>0.95 л</span>
+                                        &nbsp;
+                                        ·
+                                        &nbsp;
+                                        <span>2 л</span>
+                                    </div>
+                                    <div class="product-card__price">
+                                        <span class="product-card__current-price">от 3600 ₽</span>
+                                        <span class="product-card__old-price">4500 ₽</span>
+                                    </div>
+                                </div>
+    
+                                <div class="product-card product-card_mobile">
+                                    <div class="product-card__picture-wrapper">
+                                        <img
+                                            class="product-card__picture"
+                                            src="/static/pictures/benjamine-moor-2.png"
+                                            width="75"
+                                            height="85"
+                                            alt=""
+                                        >
+                                    </div>
+                                    <span class="product-card__name">
+                                        Benjamin Moore Aura 532 Bath & Spa Waterborne Interior Paint Matte Finish
+                                    </span>
+                                    <div class="product-card__quantity">
+                                        <span>0.95 л</span>
+                                        &nbsp;
+                                        ·
+                                        &nbsp;
+                                        <span>2 л</span>
+                                    </div>
+                                    <div class="product-card__price">
+                                        <span class="product-card__current-price">от 5200 ₽</span>
+                                        <span class="product-card__old-price">5720 ₽</span>
+                                    </div>
+                                </div>
+
+                                <div class="product-card product-card_mobile">
+                                    <div class="product-card__picture-wrapper">
+                                        <img
+                                            class="product-card__picture"
+                                            src="/static/pictures/benjamine-moor-2.png"
+                                            width="75"
+                                            height="85"
+                                            alt=""
+                                        >
+                                    </div>
+                                    <span class="product-card__name">
+                                        Benjamin Moore Aura 532 Bath & Spa Waterborne Interior Paint Matte Finish
+                                    </span>
+                                    <div class="product-card__quantity">
+                                        <span>0.95 л</span>
+                                        &nbsp;
+                                        ·
+                                        &nbsp;
+                                        <span>2 л</span>
+                                    </div>
+                                    <div class="product-card__price">
+                                        <span class="product-card__current-price">от 5200 ₽</span>
+                                        <span class="product-card__old-price">5720 ₽</span>
+                                    </div>
+                                </div>
+
+                                <div class="product-card product-card_mobile">
+                                    <div class="product-card__picture-wrapper">
+                                        <img
+                                            class="product-card__picture"
+                                            src="/static/pictures/benjamine-moor-2.png"
+                                            width="75"
+                                            height="85"
+                                            alt=""
+                                        >
+                                    </div>
+                                    <span class="product-card__name">
+                                        Benjamin Moore Aura 532 Bath & Spa Waterborne Interior Paint Matte Finish
+                                    </span>
+                                    <div class="product-card__quantity">
+                                        <span>0.95 л</span>
+                                        &nbsp;
+                                        ·
+                                        &nbsp;
+                                        <span>2 л</span>
+                                    </div>
+                                    <div class="product-card__price">
+                                        <span class="product-card__current-price">от 5200 ₽</span>
+                                        <span class="product-card__old-price">5720 ₽</span>
+                                    </div>
+                                </div>
+
+                                <div class="product-card product-card_mobile">
+                                    <div class="product-card__picture-wrapper">
+                                        <img
+                                            class="product-card__picture"
+                                            src="/static/pictures/benjamine-moor-2.png"
+                                            width="75"
+                                            height="85"
+                                            alt=""
+                                        >
+                                    </div>
+                                    <span class="product-card__name">
+                                        Benjamin Moore Aura 532 Bath & Spa Waterborne Interior Paint Matte Finish
+                                    </span>
+                                    <div class="product-card__quantity">
+                                        <span>0.95 л</span>
+                                        &nbsp;
+                                        ·
+                                        &nbsp;
+                                        <span>2 л</span>
+                                    </div>
+                                    <div class="product-card__price">
+                                        <span class="product-card__current-price">от 5200 ₽</span>
+                                        <span class="product-card__old-price">5720 ₽</span>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+           </div>
+        </section>
+
+        <section class="main-page__advantages">
+            <div class="container main-page__advantages-content">
+                <div class="main-page__advantages-card">
+                    <div class="main-page__advantages-card-img main-page__advantages-card-img_1"></div>
+                    <div class="main-page__advantages-card-content">
+                        <span class="main-page__advantages-card-title">Профессиональный подбор цвета</span>
+                        <span class="main-page__advantages-card-description">Отвечаем на вопросы покупателей в течение 10 минут</span>
+                    </div>
+                </div>
+                <div class="main-page__advantages-card">
+                    <div class="main-page__advantages-card-img main-page__advantages-card-img_2"></div>
+                    <div class="main-page__advantages-card-content">
+                        <span class="main-page__advantages-card-title">Широкий выбор красок</span>
+                        <span class="main-page__advantages-card-description">Дарим подарки и скидки до 70% всем покупателям</span>
+                    </div>
+                </div>
+                <div class="main-page__advantages-card">
+                    <div class="main-page__advantages-card-img main-page__advantages-card-img_3"></div>
+                    <div class="main-page__advantages-card-content">
+                        <span class="main-page__advantages-card-title">Гарантия качества продукции</span>
+                        <span class="main-page__advantages-card-description">Соответствуем требованиям и стандартам качества</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="categories">
+            <div class="categories__header container ">
+                <p class="categories__title">
+                    Популярные категории
+                </p>
+                <button class="categories__button button categories__button_header">
+                    <span class="categories__button-text">
+                        Все категории
+                    </span>
+                    <span class="categories__button-icn">
+                        <svg width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <g id="arrow-right">
+                            <path id="Vector" d="M14.4302 6.42993L20.5002 12.4999L14.4302 18.5699" stroke="url(#paint0_linear_445_1116)" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path id="Vector_2" d="M3.5 12.5H20.33" stroke="url(#paint1_linear_445_1116)" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                            </g>
+                            <defs>
+                            <linearGradient id="paint0_linear_445_1116" x1="14.4302" y1="6.42993" x2="21.2006" y2="6.77831" gradientUnits="userSpaceOnUse">
+                            <stop stop-color="#DD3197"/>
+                            <stop offset="1" stop-color="#822FAF"/>
+                            </linearGradient>
+                            <linearGradient id="paint1_linear_445_1116" x1="3.5" y1="12.5" x2="8.20568" y2="20.6502" gradientUnits="userSpaceOnUse">
+                            <stop stop-color="#DD3197"/>
+                            <stop offset="1" stop-color="#822FAF"/>
+                            </linearGradient>
+                            </defs>
+                        </svg>
+                    </span>
+                </button>
+            </div>
+        
+            <div class="categories__content">
+                <div class="categories__collection container ">
+                    <ul class="collection">
+                        <li class="collection__item">
+                            <svg class="collection__item-icon" height="24" width="24" viewBox="0 0 24 24">
+                                <use href="/static/icons.svg#flame"/>
+                            </svg>
+                            <span>Акции</span>
+                        </li>
+                        <li class="collection__item">
+                            <span>Для внутренних работ</span>
+                        </li>
+                        <li class="collection__item">
+                            <span>Для наружных работ</span>
+                        </li>
+                        <li class="collection__item">
+                            <span>Универсальные</span>
+                        </li>
+                        <li class="collection__item">
+                            <span>Специального назначения</span>
+                        </li>
+                        <li class="collection__item">
+                            <span>Грунтовки</span>
+                        </li>
+                        <li class="collection__item">
+                            <span>Специального назначения</span>
+                        </li>
+                        <li class="collection__item">
+                            <span>Специального назначения</span>
+                        </li>
+                    </ul>
+                </div>
+        
+                <div class="categories__card-wrapper">
+                    <span class="categories__next-card-btn">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <g id="vuesax/linear/arrow-right">
+                            <g id="arrow-right">
+                            <path id="Vector" d="M8.91016 4.07992L15.4302 10.5999C16.2002 11.3699 16.2002 12.6299 15.4302 13.3999L8.91016 19.9199" stroke="url(#paint0_linear_472_1150)" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                            </g>
+                            </g>
+                            <defs>
+                            <linearGradient id="paint0_linear_472_1150" x1="8.91016" y1="19.9199" x2="16.8308" y2="19.5547" gradientUnits="userSpaceOnUse">
+                            <stop stop-color="#DD3197"/>
+                            <stop offset="1" stop-color="#822FAF"/>
+                            </linearGradient>
+                            </defs>
+                        </svg>
+                    </span>
+                    <ul class="categories__list list">
+                        <li class="categories__item">
+                            <div class="categories__card">
+                                <img src="/static/pictures/categories-img-1.png" width="375" height="387">
+                                <div class="categories__card-content">
+                                    <span class="collection__card-text-wrapper">
+                                        <span class="categories__card-title">Краска для стен</span>
+                                        <span class="categories__card-text">500+ товаров</span>
+                                    </span>
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <g id="arrow-right">
+                                        <path id="Vector" d="M14.4301 5.92993L20.5001 11.9999L14.4301 18.0699" stroke="#3B3C40" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                                        <path id="Vector_2" d="M3.5 12H20.33" stroke="#3B3C40" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                                        </g>
+                                    </svg>
+                                </div>
+                            </div>
+                        </li>
+        
+                        <li class="categories__item">
+                            <div class="categories__card">
+                                <img src="/static/pictures/categories-img-2.png" width="375" height="387">
+                                <div class="categories__card-content">
+                                    <span class="collection__card-text-wrapper">
+                                        <span class="categories__card-title">Краски для потолка</span>
+                                        <span class="categories__card-text">500+ товаров</span>
+                                    </span>
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <g id="arrow-right">
+                                        <path id="Vector" d="M14.4301 5.92993L20.5001 11.9999L14.4301 18.0699" stroke="#3B3C40" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                                        <path id="Vector_2" d="M3.5 12H20.33" stroke="#3B3C40" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                                        </g>
+                                    </svg>
+                                </div>
+                            </div>
+                        </li>
+        
+                        <li class="categories__item">
+                            <div class="categories__card">
+                                <img src="/static/pictures/categories-img-3.png" width="375" height="387">
+                                <div class="categories__card-content">
+                                    <span class="collection__card-text-wrapper">
+                                        <span class="categories__card-title">Краски для кухни и ванной</span>
+                                        <span class="categories__card-text">500+ товаров</span>
+                                    </span>
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <g id="arrow-right">
+                                        <path id="Vector" d="M14.4301 5.92993L20.5001 11.9999L14.4301 18.0699" stroke="#3B3C40" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                                        <path id="Vector_2" d="M3.5 12H20.33" stroke="#3B3C40" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                                        </g>
+                                    </svg>
+                                </div>
+                            </div>
+                        </li>
+        
+                        <li class="categories__item">
+                            <div class="categories__card">
+                                <img src="/static/pictures/categories-img-4.png" width="375" height="387">
+                                <div class="categories__card-content">
+                                    <span class="collection__card-text-wrapper">
+                                        <span class="categories__card-title">Краски для пола</span>
+                                        <span class="categories__card-text">500+ товаров</span>
+                                    </span>
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <g id="arrow-right">
+                                        <path id="Vector" d="M14.4301 5.92993L20.5001 11.9999L14.4301 18.0699" stroke="#3B3C40" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                                        <path id="Vector_2" d="M3.5 12H20.33" stroke="#3B3C40" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                                        </g>
+                                    </svg>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+
+                    <div class="categories__bullets_wrapper">
+                        <div class="categories__bullets categories__bullets_active"></div>
+                        <div class="categories__bullets"></div>
+                        <div class="categories__bullets"></div>
+                        <div class="categories__bullets"></div>
+                    </div>
+
+                    <div>
+                        <button class="categories__button button categories__button_footer">
+                            <span class="categories__button-text">
+                                Все категории
+                            </span>
+                            <span class="categories__button-icn">
+                                <svg width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <g id="arrow-right">
+                                    <path id="Vector" d="M14.4302 6.42993L20.5002 12.4999L14.4302 18.5699" stroke="url(#paint0_linear_445_1116)" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path id="Vector_2" d="M3.5 12.5H20.33" stroke="url(#paint1_linear_445_1116)" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </g>
+                                    <defs>
+                                    <linearGradient id="paint0_linear_445_1116" x1="14.4302" y1="6.42993" x2="21.2006" y2="6.77831" gradientUnits="userSpaceOnUse">
+                                    <stop stop-color="#DD3197"/>
+                                    <stop offset="1" stop-color="#822FAF"/>
+                                    </linearGradient>
+                                    <linearGradient id="paint1_linear_445_1116" x1="3.5" y1="12.5" x2="8.20568" y2="20.6502" gradientUnits="userSpaceOnUse">
+                                    <stop stop-color="#DD3197"/>
+                                    <stop offset="1" stop-color="#822FAF"/>
+                                    </linearGradient>
+                                    </defs>
+                                </svg>
+                            </span>
+                        </button>
+                    </div>
+                </div>    
+            </div>
+        </section>
+        
+        <section class="discounts">
+            <div class="discounts__header container">
+                <p class="discounts__title">
+                    Скидки
+                </p>
+        
+                <button class="button discounts__button button discounts__button_header">
+                    <span class="discounts__button-text">
+                        Все скидки
+                    </span>
+                    <span class="discounts___button-icn">
+                        <svg width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <g id="arrow-right">
+                            <path id="Vector" d="M14.4302 6.42993L20.5002 12.4999L14.4302 18.5699" stroke="url(#paint0_linear_445_1116)" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path id="Vector_2" d="M3.5 12.5H20.33" stroke="url(#paint1_linear_445_1116)" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                            </g>
+                            <defs>
+                            <linearGradient id="paint0_linear_445_1116" x1="14.4302" y1="6.42993" x2="21.2006" y2="6.77831" gradientUnits="userSpaceOnUse">
+                            <stop stop-color="#DD3197"/>
+                            <stop offset="1" stop-color="#822FAF"/>
+                            </linearGradient>
+                            <linearGradient id="paint1_linear_445_1116" x1="3.5" y1="12.5" x2="8.20568" y2="20.6502" gradientUnits="userSpaceOnUse">
+                            <stop stop-color="#DD3197"/>
+                            <stop offset="1" stop-color="#822FAF"/>
+                            </linearGradient>
+                            </defs>
+                        </svg>
+                    </span>
+                </button>
+            </div>
+
+        <div class="discounts__content">
+                <span class="categories__next-card-btn">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <g id="vuesax/linear/arrow-right">
+                        <g id="arrow-right">
+                        <path id="Vector" d="M8.91016 4.07992L15.4302 10.5999C16.2002 11.3699 16.2002 12.6299 15.4302 13.3999L8.91016 19.9199" stroke="url(#paint0_linear_472_1150)" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                        </g>
+                        </g>
+                        <defs>
+                        <linearGradient id="paint0_linear_472_1150" x1="8.91016" y1="19.9199" x2="16.8308" y2="19.5547" gradientUnits="userSpaceOnUse">
+                        <stop stop-color="#DD3197"/>
+                        <stop offset="1" stop-color="#822FAF"/>
+                        </linearGradient>
+                        </defs>
+                    </svg>
+                </span>
+                
+                <div class="discounts__card-wrapper">
+                    <ul class="discounts__list list">
+                        <li class="discounts__item">
+                            <div class="discounts__card">
+                                <div class="product-card">
+                                    <div class="product-card__picture-wrapper">
+                                        <img
+                                            class="product-card__picture"
+                                            src="/static/pictures/benjamine-moor-1.png"
+                                            width="75"
+                                            height="85"
+                                            alt=""
+                                        >
+                                    </div>
+                                    <span class="product-card__name">
+                                        Benjamin Moore Regal Select 549 Waterborne Interior Paint Eggshell
+                                    </span>
+                                    <div class="product-card__quantity">
+                                        <span>0.95 л</span>
+                                        &nbsp;
+                                        ·
+                                        &nbsp;
+                                        <span>2 л</span>
+                                    </div>
+                                    <div class="product-card__price">
+                                        <span class="product-card__current-price">от 3600 ₽</span>
+                                        <span class="product-card__old-price">4500 ₽</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="discounts__item">
+                            <div class="discounts__card">
+                                <div class="product-card">
+                                    <div class="product-card__picture-wrapper">
+                                        <img
+                                            class="product-card__picture"
+                                            src="/static/pictures/benjamine-moor-1.png"
+                                            width="75"
+                                            height="85"
+                                            alt=""
+                                        >
+                                    </div>
+                                    <span class="product-card__name">
+                                        Benjamin Moore Regal Select 549 Waterborne Interior Paint Eggshell
+                                    </span>
+                                    <div class="product-card__quantity">
+                                        <span>0.95 л</span>
+                                        &nbsp;
+                                        ·
+                                        &nbsp;
+                                        <span>2 л</span>
+                                    </div>
+                                    <div class="product-card__price">
+                                        <span class="product-card__current-price">от 3600 ₽</span>
+                                        <span class="product-card__old-price">4500 ₽</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="discounts__item">
+                            <div class="discounts__card">
+                                <div class="product-card">
+                                    <div class="product-card__picture-wrapper">
+                                        <img
+                                            class="product-card__picture"
+                                            src="/static/pictures/benjamine-moor-1.png"
+                                            width="75"
+                                            height="85"
+                                            alt=""
+                                        >
+                                    </div>
+                                    <span class="product-card__name">
+                                        Benjamin Moore Regal Select 549 Waterborne Interior Paint Eggshell
+                                    </span>
+                                    <div class="product-card__quantity">
+                                        <span>0.95 л</span>
+                                        &nbsp;
+                                        ·
+                                        &nbsp;
+                                        <span>2 л</span>
+                                    </div>
+                                    <div class="product-card__price">
+                                        <span class="product-card__current-price">от 3600 ₽</span>
+                                        <span class="product-card__old-price">4500 ₽</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="discounts__item">
+                            <div class="discounts__card">
+                                <div class="product-card">
+                                    <div class="product-card__picture-wrapper">
+                                        <img
+                                            class="product-card__picture"
+                                            src="/static/pictures/benjamine-moor-1.png"
+                                            width="75"
+                                            height="85"
+                                            alt=""
+                                        >
+                                    </div>
+                                    <span class="product-card__name">
+                                        Benjamin Moore Regal Select 549 Waterborne Interior Paint Eggshell
+                                    </span>
+                                    <div class="product-card__quantity">
+                                        <span>0.95 л</span>
+                                        &nbsp;
+                                        ·
+                                        &nbsp;
+                                        <span>2 л</span>
+                                    </div>
+                                    <div class="product-card__price">
+                                        <span class="product-card__current-price">от 3600 ₽</span>
+                                        <span class="product-card__old-price">4500 ₽</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <button class="categories__button button categories__button_footer">
+                <span class="categories__button-text">
+                    Все категории
+                </span>
+                <span class="categories__button-icn">
+                    <svg width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <g id="arrow-right">
+                        <path id="Vector" d="M14.4302 6.42993L20.5002 12.4999L14.4302 18.5699" stroke="url(#paint0_linear_445_1116)" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path id="Vector_2" d="M3.5 12.5H20.33" stroke="url(#paint1_linear_445_1116)" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                        </g>
+                        <defs>
+                        <linearGradient id="paint0_linear_445_1116" x1="14.4302" y1="6.42993" x2="21.2006" y2="6.77831" gradientUnits="userSpaceOnUse">
+                        <stop stop-color="#DD3197"/>
+                        <stop offset="1" stop-color="#822FAF"/>
+                        </linearGradient>
+                        <linearGradient id="paint1_linear_445_1116" x1="3.5" y1="12.5" x2="8.20568" y2="20.6502" gradientUnits="userSpaceOnUse">
+                        <stop stop-color="#DD3197"/>
+                        <stop offset="1" stop-color="#822FAF"/>
+                        </linearGradient>
+                        </defs>
+                    </svg>
+                </span>
+            </button>
+        </section>
+
+        <section class="req-form container">
+            <div class="req-form__content">
+
+                <div class="req-form__image-wrapper">
+                    <div class="req-form__image"></div>
+                </div>
+
+                <div class="req-form__form-wrapper">
+                    <form class="req-form__form" id="form">
+                        <p class="req-from__title">
+                            Нужна консультация?
+                        </p>
+                        <p class="req-from__text">Оставьте свои данные, и мы перезвоним вам в ближайшее время</p>
+                        <div class="req-from__input_name">
+                            <svg width="24"  height="24">
+                                <use href="/static/icons.svg#form-name" />
+                            </svg>
+                            <input placeholder="Ваше имя" class="req-from__input" type="text" id="name">
+                        </div>
+                        <div class="req-from__input_phone">
+                            <svg width="24"  height="24">
+                                <use href="/static/icons.svg#form-phone" />
+                            </svg>
+                            <input placeholder="Номер телефона" class="req-from__input" type="text" id="phone">
+                        </div>
+                        <div class="req-form__button-container">
+                            <span class="req-form__button-container-text">
+                                Нажимая на кнопку «Отправить»,<br/> Вы принимаете условия <span class="underline">Соглашения</span>
+                            </span>
+                            <button
+                                class="button req-form__button"
+                                type="submit"
+                            >
+                                <span class="req-form__button-text">
+                                    Отрпавить
+                                </span>
+                                <span class="req-form__button-icn">
+                                    <svg width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <g id="arrow-right">
+                                        <path id="Vector" d="M14.4302 6.42993L20.5002 12.4999L14.4302 18.5699" stroke="url(#paint0_linear_445_1116)" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                                        <path id="Vector_2" d="M3.5 12.5H20.33" stroke="url(#paint1_linear_445_1116)" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                                        </g>
+                                        <defs>
+                                        <linearGradient id="paint0_linear_445_1116" x1="14.4302" y1="6.42993" x2="21.2006" y2="6.77831" gradientUnits="userSpaceOnUse">
+                                        <stop stop-color="#DD3197"/>
+                                        <stop offset="1" stop-color="#822FAF"/>
+                                        </linearGradient>
+                                        <linearGradient id="paint1_linear_445_1116" x1="3.5" y1="12.5" x2="8.20568" y2="20.6502" gradientUnits="userSpaceOnUse">
+                                        <stop stop-color="#DD3197"/>
+                                        <stop offset="1" stop-color="#822FAF"/>
+                                        </linearGradient>
+                                        </defs>
+                                    </svg>
+                                </span>
+                            </button>
+                        </div>
+                    </form>
+                </div>
+
+            </div>
+        </section>
+
+        <div class="cart-modal hidden">
+            <div class="cart-modal__header">
+                <p class="cart-modal__title">Корзина</p>
+                <span class="cart-modal__goods-count">6</span>
+            </div>
+            <ul class="cart-modal__goods-list">
+                <li class="cart-modal__goods-item">
+                    <div class="cart-modal__goods-item-picture">
+                        <img
+                            src="/static/pictures/benjamine-moor-1.png"
+                            alt=""
+                            width="70"
+                            height="70"
+                        >
+                    </div>
+                    <div class="cart-modal__goods-item-content">
+                        <div class="cart-modal__goods-item-content-top-line">
+                            <span class="cart-modal__goods-item-name">
+                                Flugger Dekso 25 Краска полуматовая с очень высокой прочностью для внутренних работ
+                            </span>
+                            <span class="cart-modal__goods-item-price">
+                                <span class="card-modal__goods-item-price-current">
+                                    3 360 ₽
+                                </span>
+                                <span class="cart-modal__goods-item-price-old">
+                                    3 900 ₽
+                                </span>
+                            </span>
+                        </div>
+                        <div class="cart-modal__goods-item-content-bottom-line">
+                            <span class="cart-modal__goods-item-volume">
+                                0.75 л
+                            </span>
+                            <span class="cart-modal__goods-item-type">
+                                Полуматовый
+                            </span>
+                            <span class="cart-modal__goods-item-color">
+                                <span
+                                    class="cart-modal__goods-item-color-preview"
+                                    style="background: #ED9039">
+                                </span>
+                                <span>
+                                    Flugger 900 FL 1358
+                                </span>
+                            </span>
+                            <span class="cart-modal__goods-item-quantity">1 шт.</span>
+                        </div>
+                    </div>
+                    <button class="cart-modal__goods-item-remove-btn">
+                        <svg width="16" height="18" viewBox="0 0 16 18">
+                            <use href="/static/icons.svg#bucket"/>
+                        </svg>
+                    </button>
+                </li>
+                <li class="cart-modal__goods-item">
+                    <div class="cart-modal__goods-item-picture">
+                        <img
+                            src="/static/pictures/benjamine-moor-1.png"
+                            alt=""
+                            width="70"
+                            height="70"
+                        >
+                    </div>
+                    <div class="cart-modal__goods-item-content">
+                        <div class="cart-modal__goods-item-content-top-line">
+                            <span class="cart-modal__goods-item-name">
+                                Flugger Dekso 25 Краска полуматовая с очень высокой прочностью для внутренних работ
+                            </span>
+                            <span class="cart-modal__goods-item-price">
+                                <span class="card-modal__goods-item-price-current">
+                                    18 740 ₽
+                                </span>
+                                <span class="cart-modal__goods-item-price-old">
+                                    19 520
+                                </span>
+                            </span>
+                        </div>
+                        <div class="cart-modal__goods-item-content-bottom-line">
+                            <span class="cart-modal__goods-item-volume">
+                                2.8 л
+                            </span>
+                            <span class="cart-modal__goods-item-type">
+                                Полуматовый
+                            </span>
+                            <span class="cart-modal__goods-item-color">
+                                <span
+                                    class="cart-modal__goods-item-color-preview"
+                                    style="background: #ED1139">
+                                </span>
+                                <span>Flugger 900 FL 1358</span>
+                            </span>
+                            <span class="cart-modal__goods-item-quantity">1 шт.</span>
+                        </div>
+                    </div>
+                    <button class="cart-modal__goods-item-remove-btn">
+                        <svg width="16" height="18" viewBox="0 0 16 18">
+                            <use href="/static/icons.svg#bucket"/>
+                        </svg>
+                    </button>
+                </li>
+            </ul>
+            <div class="cart-modal__footer">
+                <span class="cart-modal__total">
+                    <span class="cart-modal__total-title">Итого:</span>
+                    <span class="cart-modal__total-amount">40 780 ₽</span>
+                </span>
+                <div class="cart-modal__footer-controls">
+                    <button class="button button_contrast">
+                        <span class="button__caption">
+                            Купить в 1 клик
+                        </span>
+                        <span class="button button_icon button__inserted-button">
+                            <svg width="24" height="24" viewBox="0 0 24 24">
+                                <use href="/static/icons.svg#arrow"/>
+                            </svg>
+                        </span>
+                    </button>
+                    <button class="button button_contrast">
+                        <span class="button__caption">
+                            Перейти в корзину
+                        </span>
+                        <span class="button button_icon button__inserted-button">
+                            <svg width="24" height="24" viewBox="0 0 24 24">
+                                <use href="/static/icons.svg#cart"/>
+                            </svg>
+                        </span>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <div class="popup-form__wrapper hidden" id="resultModalView">
+            <div class="popup-form">
+                <span class="popup-form__close-btn" id="resultModalClose">
+                    <svg>
+                        <use href="/static/icons.svg#close-btn" />
+                    </svg>
+                </span>
+                <div class="popup-form__img"></div>
+                <div class="popup-form__content">
+                    <p class="popup-form__title">
+                        Заявка принята
+                    </p>
+                    <p class="popup-form__text">
+                        Благодарим вас за заявку! Мы приняли её, и наш менеджер свяжется с вами в ближайшее время.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="container footer">
+        <div class="footer__content">
+           <div class="footer__logo-colum">
+               <div>
+                    <a class="footer__logo" href="/">
+                        <svg width="80" height="80" viewBox="0 0 80 80">
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M10.0199 13.8392L10.9083 12.3017L12.3364 11.2761L13.6021 10.6992L68.3321 10.8442L69.8239 11.6692L71.4108 13.0336L71.6461 67.8448L70.6524 68.9239L68.6658 69.8442L13.153 70.0767L11.2302 69.1473L9.85205 67.4811L10.0199 13.8392ZM12.973 58.4842L68.6114 58.4467L68.7692 13.952L13.1724 13.782L12.973 58.4842ZM24.6317 66.4442L32.0227 66.5098L32.0571 65.4573L25.898 65.4011L25.9592 64.2548L32.0074 64.2798L32.0564 63.4864L26.0011 63.4364C26.0011 63.4364 25.9864 62.1727 26.0024 62.0208C26.0183 61.8689 32.063 62.1726 32.063 62.1726L32.0474 61.3789L24.6936 61.4083L24.6317 66.4442ZM59.3192 66.1317L66.7102 66.1973L66.7446 65.1448L60.5855 65.0886L60.6467 63.9423L66.6949 63.9673L66.7439 63.1739L60.6886 63.1239C60.6886 63.1239 60.6739 61.8602 60.6899 61.7083C60.7058 61.5564 66.7505 61.8601 66.7505 61.8601L66.7349 61.0664L59.3811 61.0958L59.3192 66.1317ZM34.4199 61.4339L34.3814 66.3295L44.1021 66.3748L44.1089 61.4542L42.2796 61.4292L42.3324 65.1317L39.8946 65.177L39.8452 61.4645L38.1889 61.408L38.2252 65.2236L35.8492 65.1502L35.7827 61.4189L34.4199 61.4339ZM46.4896 61.4058L46.3733 66.4636L47.7346 66.442C47.7346 66.442 47.6877 61.492 47.648 61.413C47.6083 61.3336 46.4896 61.4061 46.4896 61.4061V61.4058ZM15.0436 61.4514L15.0008 66.468L16.4052 66.4355L16.4024 64.4651L19.4767 64.5048L20.6786 66.1902L22.6317 66.2051L21.0721 64.5298L22.4002 63.613L22.338 61.2602L15.0436 61.4514ZM50.0436 61.4514L50.0008 66.468L51.4052 66.4355L51.4024 64.4651L54.4767 64.5048L55.6786 66.1902L57.6317 66.2051L56.072 64.5298L57.4002 63.613L57.338 61.2602L50.0436 61.4514Z"/>
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M16.4801 45.9263L23.3992 45.8279L28.0329 44.93L32.4129 43.1675L34.2204 42.1104L36.3595 43.5297L38.962 44.7991L35.3998 46.9575L31.9398 48.7032L28.8961 49.7822L25.302 50.3188L16.4873 50.4813L16.4801 45.9263ZM16.3611 38.3919L20.2595 38.4216L22.5448 37.8772L24.8298 36.8838L27.7017 38.305L30.6536 39.7332L27.0923 41.7322L23.3754 42.5891L20.2673 43.0332L16.1982 43.0957L16.3611 38.3919Z" />
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M16.4346 33.4654L20.9733 33.7179L25.2264 35.1779L29.4793 37.1142L33.1918 38.8867L37.0002 41.4895L40.6502 43.9013L44.0139 46.1201L48.4711 48.0942L52.978 49.967L55.3583 50.3795L65.358 50.3773L65.3705 45.6351L57.3402 45.8882L52.4396 44.4467L47.2189 42.1723L43.1199 39.2904L38.7368 36.376L34.2439 33.926L29.9546 31.5554L25.3499 29.4735L21.723 28.6392L16.5027 28.6976L16.4346 33.4654Z" />
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M16.5083 26.0757L23.2299 26.0917L26.9114 26.8217L30.8152 28.4404L34.4017 30.2811L38.9721 33.0107L42.6536 35.6132L47.4461 38.5648L51.6674 40.6914L56.0155 42.4051L59.253 43.0079L65.7405 43.0379L65.7377 38.3295L60.1967 38.5517L55.0402 36.7898L50.1074 33.9701L44.5355 30.7661L39.4127 27.402L34.6086 24.6142L30.0717 22.5164L27.0314 21.6832L25.6055 21.3936L16.5383 21.5932L16.5083 26.0757Z" />
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M65.7537 33.2224L65.8265 28.1762L60.1256 28.2362L57.4668 28.744L53.9743 29.7915L51.2509 31.1246L50.2256 31.6959L53.0781 33.1184L55.9343 34.6737L59.0762 33.7762L61.4884 33.3278L65.7537 33.2224ZM65.3915 25.9093L65.5421 20.9556L59.3271 20.9859L54.8753 21.0156L50.774 22.1265L46.4499 24.1259L43.1187 26.5678L43.1431 27.1953L45.2378 28.4331L47.5228 30.0199L50.5696 28.2899L54.029 27.1043L58.409 26.1406L65.3915 25.9093ZM16.6749 62.5009L16.6431 63.6118L20.3753 63.6406L20.534 62.4871L16.6749 62.5009ZM51.6749 62.5009L51.6431 63.6118L55.3753 63.6406L55.534 62.4871L51.6749 62.5009Z" />
+                        </svg>
+                    </a>
+               </div>
+               <div class="footer__logo-content">
+                    <div class="footer__logo-icns">
+                        <span>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                <path d="M5.96463 21.924C5.43389 22.188 4.83164 21.7253 4.93889 21.1347L6.08013 14.8282L1.23602 10.3537C0.783649 9.93507 1.01877 9.16976 1.62515 9.0871L8.35988 8.15913L11.3629 2.38999C11.6337 1.87 12.3666 1.87 12.6375 2.38999L15.6405 8.15913L22.3752 9.0871C22.9816 9.16976 23.2167 9.93507 22.763 10.3537L17.9202 14.8282L19.0615 21.1347C19.1687 21.7253 18.5665 22.188 18.0357 21.924L11.9981 18.9161L5.96463 21.924Z" fill="#E50E78"/>
+                            </svg>
+                        </span>
+                        <span>
+                            5/5
+                        </span>
+                    </div>
+                    <div class="footer__button">
+                        <a href="/">
+                            Написать директору
+                        </a>
+                    </div>
+               </div>
+
+               <ul class="footer__info-list footer__info-list_mobile">
+                <li class="footer__info-title-item">
+                    <span class="footer__info-title">
+                        О компании
+                    </span>
+                </li>
+                <li>
+                    <span class="footer__info-text">
+                        О нас
+                    </span>
+                </li>
+                <li>
+                    <span class="footer__info-text">
+                        Бренды
+                    </span>
+                </li>
+                <li>
+                    <span class="footer__info-text">
+                        Вакансии                               
+                    </span>
+                </li>
+                <li>
+                    <span class="footer__info-text">
+                        Для бизнеса
+                    </span>
+                </li>
+                <li>
+                    <span class="footer__info-text">
+                        Магазины
+                    </span>
+                </li>
+                <li>
+                    <span class="footer__info-text">
+                        Оплата
+                    </span>
+                </li>
+                <li>
+                    <span class="footer__info-text">
+                        Оплата                                
+                    </span>
+                </li>
+                <li>
+                    <span class="footer__info-text">
+                        Доставка
+                    </span>
+                </li>
+                <li>
+                    <span class="footer__info-text">
+                        Акции                               
+                    </span>
+                </li>
+                <li>
+                    <span class="footer__info-text">
+                        Помощь
+                    </span>
+                </li>
+            </ul>
+           </div>
+
+           <div class="footer__contacts">
+                <div>
+                    <ul class="footer__contacts-list">
+                        <li>
+                            <span class="footer__contacts_title">
+                                Телефон
+                            </span>
+                        </li>
+                        <li>
+                            <span class="footer__contacts_text">
+                                8 (495) 120-81-55
+                            </span>
+                        </li>
+                    </ul>
+    
+                    <ul class="footer__contacts-list">
+                        <li>
+                            <span  class="footer__contacts_title">
+                                Электронная почта
+                            </span>
+                        </li>
+                        <li>
+                            <span class="footer__contacts_text">
+                                info@kraskizdes.ru
+                            </span>
+                        </li>
+                    </ul>
+                    <div class="footer__contacts-icn-wrapper">
+                        <span>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 30 30" fill="none">
+                                <path d="M18.5853 3.33331H11.4267C4.88866 3.33331 3.3335 4.88848 3.3335 11.4148V18.5735C3.3335 25.1103 4.877 26.6666 11.415 26.6666H18.5737C25.1105 26.6666 26.6668 25.1231 26.6668 18.5851V11.4265C26.6668 4.88848 25.1233 3.33331 18.5853 3.33331ZM22.1705 19.9816H20.4683C19.8243 19.9816 19.6307 19.4601 18.4757 18.3051C17.4677 17.3333 17.0418 17.212 16.7863 17.212C16.434 17.212 16.3372 17.3088 16.3372 17.7953V19.326C16.3372 19.7401 16.203 19.9828 15.1215 19.9828C14.0719 19.9123 13.0541 19.5934 12.1519 19.0524C11.2496 18.5115 10.4889 17.7639 9.93216 16.8713C8.61053 15.2263 7.69093 13.2956 7.2465 11.2328C7.2465 10.9773 7.34333 10.7463 7.82983 10.7463H9.53083C9.96833 10.7463 10.1258 10.9411 10.2973 11.3903C11.1233 13.8216 12.5327 15.9356 13.1043 15.9356C13.3237 15.9356 13.4193 15.8388 13.4193 15.2916V12.788C13.347 11.6458 12.7403 11.549 12.7403 11.136C12.7481 11.027 12.798 10.9254 12.8795 10.8527C12.961 10.7799 13.0675 10.7418 13.1767 10.7463H15.8507C16.2158 10.7463 16.3372 10.9283 16.3372 11.3658V14.7445C16.3372 15.1096 16.4947 15.231 16.6043 15.231C16.8237 15.231 16.9928 15.1096 17.3942 14.7083C18.2562 13.6571 18.9605 12.4859 19.4848 11.2316C19.5384 11.081 19.6398 10.952 19.7736 10.8644C19.9074 10.7767 20.0661 10.7353 20.2257 10.7463H21.9278C22.4377 10.7463 22.5462 11.0018 22.4377 11.3658C21.8187 12.7523 21.0529 14.0684 20.1533 15.2916C19.9702 15.5716 19.8967 15.7175 20.1533 16.0453C20.3225 16.3008 20.9187 16.799 21.32 17.2726C21.9032 17.8544 22.3875 18.5275 22.7538 19.2653C22.8997 19.739 22.6558 19.9816 22.1705 19.9816Z" fill="#3B3C40"/>
+                            </svg>
+                        </span>
+                        <span>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 30 30" fill="none">
+                                <g clip-path="url(#clip0_2_7258)">
+                                  <path d="M12 20L19.785 15.5L12 11V20ZM29.34 8.255C29.535 8.96 29.67 9.905 29.76 11.105C29.865 12.305 29.91 13.34 29.91 14.24L30 15.5C30 18.785 29.76 21.2 29.34 22.745C28.965 24.095 28.095 24.965 26.745 25.34C26.04 25.535 24.75 25.67 22.77 25.76C20.82 25.865 19.035 25.91 17.385 25.91L15 26C8.715 26 4.8 25.76 3.255 25.34C1.905 24.965 1.035 24.095 0.66 22.745C0.465 22.04 0.33 21.095 0.24 19.895C0.135 18.695 0.0899999 17.66 0.0899999 16.76L0 15.5C0 12.215 0.24 9.8 0.66 8.255C1.035 6.905 1.905 6.035 3.255 5.66C3.96 5.465 5.25 5.33 7.23 5.24C9.18 5.135 10.965 5.09 12.615 5.09L15 5C21.285 5 25.2 5.24 26.745 5.66C28.095 6.035 28.965 6.905 29.34 8.255Z" fill="#3B3C40"/>
+                                </g>
+                                <defs>
+                                  <clipPath id="clip0_2_7258">
+                                    <rect width="30" height="30" fill="white"/>
+                                  </clipPath>
+                                </defs>
+                            </svg>
+                        </span>
+                    </div>
+                </div>
+
+                <div class="footer__pay-wrapper">
+                    <span>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="170" height="20" viewBox="0 0 170 20" fill="none">
+                            <path d="M15.1232 18.1337C15.2005 18.1998 15.2832 18.2659 15.3645 18.3306C13.7425 19.4223 11.8368 20.0032 9.88829 20C8.3453 20 6.82372 19.6348 5.44527 18.9336C4.06681 18.2325 2.86973 17.2149 1.94977 15.9622C1.02982 14.7094 0.412512 13.2564 0.147236 11.7192C-0.11804 10.1821 -0.0239254 8.60345 0.422051 7.10966C0.868028 5.61586 1.65349 4.24834 2.71561 3.11647C3.77774 1.98459 5.08705 1.11979 6.53882 0.591213C7.99058 0.06264 9.54452 -0.115029 11.0763 0.0724165C12.6082 0.259862 14.0753 0.807221 15.3605 1.67071C15.2805 1.73948 15.2005 1.80286 15.1405 1.87298C13.9855 2.88084 13.0588 4.12859 12.4235 5.53125C11.7882 6.93391 11.4592 8.45855 11.459 10.0013C11.4594 11.543 11.7866 13.0666 12.4187 14.4695C13.0508 15.8724 13.973 17.1219 15.1232 18.1337ZM22.1115 0.00135013C20.0848 0.00135013 18.2034 0.616236 16.6379 1.67071C16.7179 1.73948 16.798 1.80286 16.858 1.87298C18.013 2.88084 18.9397 4.12859 19.575 5.53125C20.2103 6.93391 20.5393 8.45855 20.5395 10.0013C20.5386 11.5429 20.2111 13.0664 19.5791 14.4692C18.947 15.872 18.025 17.1216 16.8753 18.1337C16.798 18.1998 16.7153 18.2659 16.6339 18.3306C18.2559 19.4227 20.1617 20.0036 22.1102 20C23.4089 20.0005 24.6949 19.7423 25.8949 19.24C27.0948 18.7378 28.1852 18.0013 29.1036 17.0728C30.022 16.1443 30.7505 15.0418 31.2475 13.8285C31.7445 12.6151 32.0002 11.3147 32 10.0013C31.9996 7.34929 30.9577 4.80596 29.1033 2.93067C27.249 1.05539 24.734 0.00170767 22.1115 0.00135013ZM15.9992 2.14536C14.8213 3.07885 13.8692 4.27147 13.2151 5.63269C12.561 6.9939 12.2222 8.48793 12.2244 10.0013C12.2218 11.515 12.5604 13.0094 13.2145 14.3709C13.8686 15.7324 14.821 16.9252 15.9992 17.8587C17.1772 16.9249 18.1294 15.732 18.7834 14.3706C19.4375 13.0092 19.7763 11.5149 19.7741 10.0013C19.7763 8.48793 19.4375 6.9939 18.7834 5.63269C18.1293 4.27147 17.1772 3.07885 15.9992 2.14536Z" fill="#3B3C40"/>
+                            <path d="M65.9833 2.28487L59.4375 17.7585H55.1667L51.9458 5.40808C51.75 4.64843 51.5812 4.36976 50.9854 4.0498C50.0146 3.52754 48.4104 3.03832 47 2.73281L47.0958 2.28487H53.9708C54.4201 2.28442 54.8547 2.44312 55.1963 2.73232C55.5378 3.02152 55.7638 3.42217 55.8333 3.86195L57.5354 12.8167L61.7396 2.28487H65.9833ZM82.7188 12.7073C82.7354 8.62211 77.0187 8.39711 77.0583 6.57231C77.0708 6.01703 77.6042 5.42666 78.7708 5.27597C80.1381 5.1473 81.5151 5.38694 82.7562 5.96955L83.4646 2.6874C82.2562 2.23728 80.9764 2.00449 79.6854 2C75.6917 2 72.8813 4.10554 72.8562 7.11728C72.8312 9.3446 74.8625 10.5852 76.3937 11.3283C77.9688 12.0859 78.4979 12.5731 78.4896 13.2502C78.4792 14.2905 77.2354 14.7467 76.0729 14.7653C74.0417 14.7963 72.8646 14.2224 71.9229 13.7889L71.1917 17.1784C72.1354 17.6078 73.8771 17.9835 75.6833 18C79.9271 18 82.7042 15.9234 82.7188 12.7073ZM93.2625 17.7585H97L93.7396 2.28487H90.2896C89.921 2.28148 89.5598 2.38791 89.253 2.59035C88.9461 2.79279 88.7078 3.08191 88.5687 3.42021L82.5083 17.7585H86.75L87.5938 15.4465H92.7771L93.2625 17.7585ZM88.7562 12.2758L90.8812 6.46497L92.1062 12.2758H88.7562ZM71.7563 2.28487L68.4167 17.7585H64.375L67.7187 2.28487H71.7563Z" fill="#3B3C40"/>
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M117.289 2.00273C117.8 1.9996 119.319 1.8593 119.962 4.08611C120.396 5.58611 121.086 8.04318 122.033 11.4573H122.419C123.435 7.85789 124.133 5.40082 124.512 4.08611C125.162 1.83611 126.787 2.00277 127.437 2.00277L132.452 2.00278V18.0027H127.341V8.5737H126.998L124.149 18.0027H120.303L117.454 8.56671H117.111V18.0027H112V2.00278L117.289 2.00273ZM139.792 2.00278V11.4388H140.2L143.666 3.67964C144.339 2.13553 145.773 2.00278 145.773 2.00278H150.719V18.0028H145.501V8.56671H145.093L141.695 16.3259C141.022 17.863 139.52 18.0028 139.52 18.0028H134.574V2.00278H139.792ZM168.755 9.60608C168.027 11.7216 165.741 13.2366 163.21 13.2366H157.738V18.0028H152.776V9.60608H168.755Z" fill="#3B3C40"/>
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M163.449 2.00293H152.516C152.776 5.56507 155.767 8.6145 158.863 8.6145H169.099C169.69 5.65394 167.656 2.00293 163.449 2.00293Z" fill="#9293B0"/>
+                        </svg>
+                    </span>
+                </div>
+
+                <div class="footer__logo-icns footer__logo-icns_mobile">
+                    <span>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                            <path d="M5.96463 21.924C5.43389 22.188 4.83164 21.7253 4.93889 21.1347L6.08013 14.8282L1.23602 10.3537C0.783649 9.93507 1.01877 9.16976 1.62515 9.0871L8.35988 8.15913L11.3629 2.38999C11.6337 1.87 12.3666 1.87 12.6375 2.38999L15.6405 8.15913L22.3752 9.0871C22.9816 9.16976 23.2167 9.93507 22.763 10.3537L17.9202 14.8282L19.0615 21.1347C19.1687 21.7253 18.5665 22.188 18.0357 21.924L11.9981 18.9161L5.96463 21.924Z" fill="#E50E78"/>
+                        </svg>
+                    </span>
+                    <span>
+                        5/5
+                    </span>
+                </div>
+                <div class="footer__button footer__button_mobile">
+                    <a href="/">
+                        Написать директору
+                    </a>
+                </div>
+            </div>
+
+            <div class="footer__info">
+                <ul class="footer__info-list">
+                    <li class="footer__info-title-item">
+                        <span class="footer__info-title">
+                            О компании
+                        </span>
+                    </li>
+                    <li>
+                        <span class="footer__info-text">
+                            О нас
+                        </span>
+                    </li>
+                    <li>
+                        <span class="footer__info-text">
+                            Бренды
+                        </span>
+                    </li>
+                    <li>
+                        <span class="footer__info-text">
+                            Вакансии                               
+                        </span>
+                    </li>
+                    <li>
+                        <span class="footer__info-text">
+                            Для бизнеса
+                        </span>
+                    </li>
+                    <li>
+                        <span class="footer__info-text">
+                            Магазины
+                        </span>
+                    </li>
+                    <li>
+                        <span class="footer__info-text">
+                            Оплата
+                        </span>
+                    </li>
+                    <li>
+                        <span class="footer__info-text">
+                            Оплата                                
+                        </span>
+                    </li>
+                    <li>
+                        <span class="footer__info-text">
+                            Доставка
+                        </span>
+                    </li>
+                    <li>
+                        <span class="footer__info-text">
+                            Акции                               
+                        </span>
+                    </li>
+                    <li>
+                        <span class="footer__info-text">
+                            Помощь
+                        </span>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="footer__catalog">
+                <ul class="footer__catalog-list">
+                    <li class="footer__info-title-item">
+                        <span class="footer__catalog-title">
+                            Каталог
+                        </span>
+                    </li>
+                    <li>
+                        <span class="footer__catalog-text">
+                            Спецпредложение
+                        </span>
+                    </li>
+                    <li>
+                        <span class="footer__catalog-text">
+                            Краски для внутренних работ
+                        </span>
+                    </li>
+                    <li>
+                        <span class="footer__catalog-text">
+                            Краски для наружных работ
+                        </span>
+                    </li>
+                    <li>
+                        <span class="footer__catalog-text">
+                            Краски универсальные
+                        </span>
+                    </li>
+                    <li>
+                        <span class="footer__catalog-text">
+                            Краски специального назначения
+                        </span>
+                    </li>
+                    <li>
+                        <span class="footer__catalog-text">
+                            Антисептики, пропитки, лазури<br /> для дерева и камня
+                        </span>
+                    </li>
+                    <li>
+                        <span class="footer__catalog-text">
+                            Лаки, масла, воски
+                        </span>
+                    </li>
+                    <li>
+                        <span class="footer__catalog-text">
+                            Грунтовки
+                        </span>
+                    </li>
+                    <li>
+                        <span class="footer__catalog-text">
+                            Декоративные штукатурки,<br /> фактурные краски
+                        </span>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="footer__catalog">
+                <ul class="footer__catalog-list footer__catalog-list_no-title">
+                    <li>
+                        <span class="footer__catalog-text">
+                            Декоративные дизайнерские краски
+                        </span>
+                    </li>
+                    <li>
+                        <span class="footer__catalog-text">
+                            Монтажные пены и очистители
+                        </span>
+                    </li>
+                    <li>
+                        <span class="footer__catalog-text">
+                            Клея, герметики, гидроизоляция
+                        </span>
+                    </li>
+                    <li>
+                        <span class="footer__catalog-text">
+                            Затирки, сухие смеси
+                        </span>
+                    </li>
+                    <li>
+                        <span class="footer__catalog-text">
+                            Растворители и очистители, спецсредства
+                        </span>
+                    </li>
+                    <li>
+                        <span class="footer__catalog-text">
+                            Малярные инструменты, краскопульты
+                        </span>
+                    </li>
+                    <li>
+                        <span class="footer__catalog-text">
+                            Морилки по дереву
+                        </span>
+                    </li>
+                    <li>
+                        <span class="footer__catalog-text">
+                            Стеклообои, малярный флизелин,<br /> обои под покраску
+                        </span>
+                    </li>
+                    <li>
+                        <span class="footer__catalog-text">
+                            Каталоги цветов, колеровочные карты
+                        </span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer__bottom-line">
+            <span class="footer__bottom-line-text">© 2023 Интернет-магазин лакокрасочной продукции</span>
+        </div>
+    </footer>
+
+    <script src="/index.js" defer></script>
+</body>
+</html>
